@@ -7,22 +7,22 @@
     </listeners>
 
 
-    <test name="Droppable Test Cases">
+    <test name="Case 1_Drag and Drop Test Case">
         <classes>
             <class name="com.qa.web.test.DragAndDropTest"></class>
 
         </classes>
     </test>
-    <test name="Selectable Test Cases">
+    <test name="Case 2_Select Item Test Case">
         <classes>
-            <class name="com.qa.web.test.SelectTest"></class>
+            <class name="com.qa.web.test.SelectItemTest"></class>
 
         </classes>
     </test>
-    <test name="ControlGroup Test Cases">
+    <test name="Case 3_ControlGroup Test Case">
         <classes>
 
-            <class name="com.qa.web.test.CheckBoxAndRadioButtonTest"></class>
+            <class name="com.qa.web.test.ControlgroupTest"></class>
 
         </classes>
     </test>

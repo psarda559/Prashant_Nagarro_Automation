@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-10-29T21:33:57 GST" name="UI Automation Assignment " finished-at="2021-10-29T21:34:21 GST" duration-ms="24006">
+    <groups>
+    </groups>
+    <test started-at="2021-10-29T21:33:57 GST" name="Case 1_Drag and Drop Test Case" finished-at="2021-10-29T21:34:05 GST" duration-ms="7661">
+      <class name="com.qa.web.test.DragAndDropTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.web.test.DragAndDropTest@75d3a5e0]" started-at="2021-10-29T21:33:57 GST" name="setup" finished-at="2021-10-29T21:34:02 GST" duration-ms="5166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dragAndDrop()[pri:0, instance:com.qa.web.test.DragAndDropTest@75d3a5e0]" started-at="2021-10-29T21:34:02 GST" name="dragAndDrop" finished-at="2021-10-29T21:34:05 GST" duration-ms="2325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragAndDrop -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.web.test.DragAndDropTest@75d3a5e0]" started-at="2021-10-29T21:34:05 GST" name="teardown" finished-at="2021-10-29T21:34:05 GST" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qa.web.test.DragAndDropTest -->
+    </test> <!-- Case 1_Drag and Drop Test Case -->
+    <test started-at="2021-10-29T21:34:05 GST" name="Case 2_Select Item Test Case" finished-at="2021-10-29T21:34:12 GST" duration-ms="7353">
+      <class name="com.qa.web.test.SelectItemTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.web.test.SelectItemTest@52f27fbd]" started-at="2021-10-29T21:34:05 GST" name="setup" finished-at="2021-10-29T21:34:09 GST" duration-ms="4004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="selectItems()[pri:0, instance:com.qa.web.test.SelectItemTest@52f27fbd]" started-at="2021-10-29T21:34:09 GST" name="selectItems" finished-at="2021-10-29T21:34:12 GST" duration-ms="3266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectItems -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.web.test.SelectItemTest@52f27fbd]" started-at="2021-10-29T21:34:12 GST" name="teardown" finished-at="2021-10-29T21:34:12 GST" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qa.web.test.SelectItemTest -->
+    </test> <!-- Case 2_Select Item Test Case -->
+    <test started-at="2021-10-29T21:34:12 GST" name="Case 3_ControlGroup Test Case" finished-at="2021-10-29T21:34:21 GST" duration-ms="8966">
+      <class name="com.qa.web.test.ControlgroupTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.web.test.ControlgroupTest@70cf32e3]" started-at="2021-10-29T21:34:12 GST" name="setup" finished-at="2021-10-29T21:34:17 GST" duration-ms="4484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="selectRadioButtonAndCheckBox()[pri:0, instance:com.qa.web.test.ControlgroupTest@70cf32e3]" started-at="2021-10-29T21:34:17 GST" name="selectRadioButtonAndCheckBox" finished-at="2021-10-29T21:34:21 GST" duration-ms="4384" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectRadioButtonAndCheckBox -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.web.test.ControlgroupTest@70cf32e3]" started-at="2021-10-29T21:34:21 GST" name="teardown" finished-at="2021-10-29T21:34:21 GST" duration-ms="92" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qa.web.test.ControlgroupTest -->
+    </test> <!-- Case 3_ControlGroup Test Case -->
+  </suite> <!-- UI Automation Assignment  -->
+</testng-results>

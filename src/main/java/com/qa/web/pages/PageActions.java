@@ -1,6 +1,8 @@
 package com.qa.web.pages;
 
 import com.qa.web.base.TestBase;
+import com.qa.web.utils.TestUtil;
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -11,13 +13,14 @@ import static com.qa.web.utils.TestUtil.clickOn;
 
 public class PageActions extends TestBase {
 
+	TestUtil testUtil = new TestUtil();
     @FindBy(xpath = "//a[contains(text(),'Droppable')]")
     private WebElement droppable;
 
-    @FindBy(xpath = "//*[@id='draggable']")
+    @FindBy(xpath = "//div[@id='draggable']")
     private WebElement dragElement;
 
-    @FindBy(xpath = "//*[@id='droppable']")
+    @FindBy(xpath = "//div[@id='droppable']")
     private WebElement dropElement;
 
     @FindBy(xpath = "//a[contains(text(),'Selectable')]")
@@ -77,79 +80,61 @@ public class PageActions extends TestBase {
     }
 
 
-    public void selectDroppableInteraction() {
+    public void selectDroppable() {
         clickOn(driver,droppable);
 
     }
 
-    public void selectSelectableInteraction() {
+    public void selectSelectable() {
         clickOn(driver,selectable);
     }
 
 
     public void performDragAndDrop() {
-
-        driver.switchTo().frame(0);
-        Actions action = new Actions(driver);
-        action.clickAndHold(dragElement)
-                .moveToElement(dropElement)
-                .release()
-                .build().perform();
-
+    	TestUtil.switchToFrame();
+        TestUtil.dragAndDrop(dragElement, dropElement);
     }
 
     public void selectOptions() {
-        driver.switchTo().frame(0);
+    	TestUtil.switchToFrame();       
         Actions action = new Actions(driver);
         action.keyDown(Keys.CONTROL);
-        Item1.click();
+        clickOn(driver,Item1);
         action.build().perform();
         action.keyUp(Keys.CONTROL);
-        Item3.click();
-        Item7.click();
-
-
+        clickOn(driver,Item3);
+        clickOn(driver,Item7);
     }
 
-    public void selectWidget() {
+    public void selectcontrolGroup() {
         clickOn(driver,controlGroup);
-        driver.switchTo().frame(0);
+        TestUtil.switchToFrame(); 
     }
 
     public void chooseSUV() {
-        rentalCar1.click();
-        SUV.click();
-
-
+    	clickOn(driver, rentalCar1);
+    	clickOn(driver, SUV);
     }
 
     public void chooseTruck() {
-        rentalCar2.click();
-        Truck.click();
-
-
+    	clickOn(driver, rentalCar2);
+    	clickOn(driver, Truck);
     }
 
     public void SUVDetails() {
-
-        suvAutomatic.click();
-        suvInsurance.click();
-        numberOfSUV.sendKeys("2");
-
+    	clickOn(driver, suvAutomatic);
+    	clickOn(driver, suvInsurance);
+        TestUtil.enterValue(numberOfSUV, "2");
     }
 
     public void TruckDetails() {
-
-        truckStandard.click();
-        truckInsurance.click();
-        numberOfTrucks.sendKeys("1");
-
+    	clickOn(driver, truckStandard);
+    	clickOn(driver, truckInsurance);
+        TestUtil.enterValue(numberOfTrucks, "1");
     }
 
     public void BookNow() {
-        bookNow.click();
-
+    	clickOn(driver, bookNow);
     }
-
 
 }

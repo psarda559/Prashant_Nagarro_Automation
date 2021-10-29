@@ -6,14 +6,13 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class CheckBoxAndRadioButtonTest extends TestBase {
+public class ControlgroupTest extends TestBase {
 
 
     PageActions pageActions;
 
-    public CheckBoxAndRadioButtonTest() {
+    public ControlgroupTest() {
         super();
-
     }
 
 
@@ -21,20 +20,17 @@ public class CheckBoxAndRadioButtonTest extends TestBase {
     public void setup() {
         Initialization();
         pageActions = new PageActions();
-
-
     }
 
 
     @Test
     public void selectRadioButtonAndCheckBox() {
-        pageActions.selectWidget();
+        pageActions.selectcontrolGroup();
         pageActions.chooseSUV();
         pageActions.SUVDetails();
         pageActions.chooseTruck();
         pageActions.TruckDetails();
         pageActions.BookNow();
-
     }
 
 

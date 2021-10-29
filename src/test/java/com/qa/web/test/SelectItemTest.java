@@ -6,14 +6,13 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class SelectTest extends TestBase {
+public class SelectItemTest extends TestBase {
 
 
     PageActions pageActions;
 
-    public SelectTest() {
+    public SelectItemTest() {
         super();
-
     }
 
 
@@ -21,14 +20,12 @@ public class SelectTest extends TestBase {
     public void setup() {
         Initialization();
         pageActions = new PageActions();
-
-
     }
 
 
     @Test
     public void selectItems() {
-        pageActions.selectSelectableInteraction();
+        pageActions.selectSelectable();
         pageActions.selectOptions();
     }
 

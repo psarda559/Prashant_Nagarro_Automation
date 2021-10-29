@@ -38,11 +38,11 @@ public class TestBase {
     public static void Initialization() {
         String browser = properties.getProperty("browser");
 
-        if (browser.equals("Chrome")) {
+        if (browser.equalsIgnoreCase("Chrome")) {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
 
-        } else if (browser.equals("ff")) {
+        } else if (browser.equalsIgnoreCase("ff")) {
             WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver();
 
@@ -50,8 +50,7 @@ public class TestBase {
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().pageLoadTimeout(Page_Load_Timeout, TimeUnit.SECONDS);
-         driver.manage().timeouts().implicitlyWait(IMPLICITLY_WAIT, TimeUnit.SECONDS);
-
+        driver.manage().timeouts().implicitlyWait(IMPLICITLY_WAIT, TimeUnit.SECONDS);
         driver.get(properties.getProperty("url"));
 
     }
